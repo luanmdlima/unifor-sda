@@ -1,0 +1,19 @@
+|reg4
+clk => \carga:d3_temp.CLK
+clk => \carga:d2_temp.CLK
+clk => \carga:d1_temp.CLK
+clk => \carga:d0_temp.CLK
+en => \carga:d3_temp.ENA
+en => \carga:d2_temp.ENA
+en => \carga:d1_temp.ENA
+en => \carga:d0_temp.ENA
+d0 => \carga:d0_temp.DATAIN
+d1 => \carga:d1_temp.DATAIN
+d2 => \carga:d2_temp.DATAIN
+d3 => \carga:d3_temp.DATAIN
+q0 << \carga:d0_temp.DB_MAX_OUTPUT_PORT_TYPE
+q1 << \carga:d1_temp.DB_MAX_OUTPUT_PORT_TYPE
+q2 << \carga:d2_temp.DB_MAX_OUTPUT_PORT_TYPE
+q3 << \carga:d3_temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
