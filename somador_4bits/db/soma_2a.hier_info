@@ -1,0 +1,61 @@
+|soma_2a
+x[0] => soma_1a:x0.a
+x[1] => soma_1a:x1.a
+x[2] => soma_1a:x2.a
+x[3] => soma_1a:x3.a
+y[0] => soma_1a:x0.b
+y[1] => soma_1a:x1.b
+y[2] => soma_1a:x2.b
+y[3] => soma_1a:x3.b
+ze => soma_1a:x0.ve
+s[0] <= soma_1a:x0.s
+s[1] <= soma_1a:x1.s
+s[2] <= soma_1a:x2.s
+s[3] <= soma_1a:x3.s
+zs <= soma_1a:x3.vs
+
+
+|soma_2a|soma_1a:x0
+a => s.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+ve => s.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soma_2a|soma_1a:x1
+a => s.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+ve => s.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soma_2a|soma_1a:x2
+a => s.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+ve => s.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soma_2a|soma_1a:x3
+a => s.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+ve => s.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
