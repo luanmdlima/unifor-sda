@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tarefa_1
-Tue Sep 13 15:31:13 2022
+Tue Sep 13 23:17:56 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 13 15:31:13 2022      ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 13 23:17:56 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; tarefa_1                                   ;
-; Top-level Entity Name              ; part2b                                     ;
+; Top-level Entity Name              ; part5                                      ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 4                                          ;
-;     Total combinational functions  ; 4                                          ;
+; Total logic elements               ; 24                                         ;
+;     Total combinational functions  ; 24                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 20                                         ;
+; Total pins                         ; 48                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; part2b             ; tarefa_1           ;
+; Top-level entity name                                                      ; part5              ; tarefa_1           ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -150,25 +150,25 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; part2b.vhd                       ; yes             ; User VHDL File  ; C:/Users/luanm/workspace/unifor/sda/tarefa_1/part2b.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
+; part5.vhd                        ; yes             ; User VHDL File  ; C:/Users/luanm/workspace/unifor/sda/tarefa_1/part5.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -176,38 +176,46 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 4           ;
+; Estimated Total logic elements              ; 24          ;
 ;                                             ;             ;
-; Total combinational functions               ; 4           ;
+; Total combinational functions               ; 24          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 4           ;
+;     -- 4 input functions                    ; 8           ;
+;     -- 3 input functions                    ; 16          ;
 ;     -- <=2 input functions                  ; 0           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 4           ;
+;     -- normal mode                          ; 24          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
 ;     -- Dedicated logic registers            ; 0           ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 20          ;
+; I/O pins                                    ; 48          ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; SW[9]~input ;
-; Maximum fan-out                             ; 5           ;
-; Total fan-out                               ; 37          ;
-; Average fan-out                             ; 0.84        ;
+; Maximum fan-out node                        ; SW[8]~input ;
+; Maximum fan-out                             ; 17          ;
+; Total fan-out                               ; 166         ;
+; Average fan-out                             ; 1.38        ;
 +---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |part2b                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |part2b             ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
+; |part5                     ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |part5                  ; work         ;
+;    |char_7seg:H0|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|char_7seg:H0     ; work         ;
+;    |char_7seg:H1|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|char_7seg:H1     ; work         ;
+;    |char_7seg:H2|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|char_7seg:H2     ; work         ;
+;    |char_7seg:H3|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|char_7seg:H3     ; work         ;
+;    |mux_2bit_4to1:M0|      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|mux_2bit_4to1:M0 ; work         ;
+;    |mux_2bit_4to1:M1|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|mux_2bit_4to1:M1 ; work         ;
+;    |mux_2bit_4to1:M2|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|mux_2bit_4to1:M2 ; work         ;
+;    |mux_2bit_4to1:M3|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part5|mux_2bit_4to1:M3 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,41 +249,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Sep 13 15:31:11 2022
+    Info: Processing started: Tue Sep 13 23:17:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tarefa_1 -c tarefa_1
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file part2b.vhd
     Info (12022): Found design unit 1: part2b-Structure
     Info (12023): Found entity 1: part2b
-Info (12021): Found 2 design units, including 1 entities, in source file mux_2bit_4to1.vhd
-    Info (12022): Found design unit 1: mux_2bit_4to1-rtl
-    Info (12023): Found entity 1: mux_2bit_4to1
 Info (12021): Found 2 design units, including 1 entities, in source file part3.vhd
     Info (12022): Found design unit 1: part3-Structure
     Info (12023): Found entity 1: part3
 Info (12021): Found 2 design units, including 1 entities, in source file part4.vhd
     Info (12022): Found design unit 1: part4-Structure
     Info (12023): Found entity 1: part4
-Info (12127): Elaborating entity "part2b" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[6]" is stuck at GND
-    Warning (13410): Pin "LEDG[7]" is stuck at GND
-    Warning (13410): Pin "LEDG[8]" is stuck at GND
+Info (12021): Found 6 design units, including 3 entities, in source file part5.vhd
+    Info (12022): Found design unit 1: part5-Structure
+    Info (12022): Found design unit 2: mux_2bit_4to1-Behavior
+    Info (12022): Found design unit 3: char_7seg-Behavior
+    Info (12023): Found entity 1: part5
+    Info (12023): Found entity 2: mux_2bit_4to1
+    Info (12023): Found entity 3: char_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2bit_4to1_x.vhd
+    Info (12022): Found design unit 1: mux_2bit_4to1_x-rtl
+    Info (12023): Found entity 1: mux_2bit_4to1_x
+Info (12127): Elaborating entity "part5" for the top level hierarchy
+Info (12128): Elaborating entity "mux_2bit_4to1" for hierarchy "mux_2bit_4to1:M3"
+Info (12128): Elaborating entity "char_7seg" for hierarchy "char_7seg:H3"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]"
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4681 megabytes
-    Info: Processing ended: Tue Sep 13 15:31:13 2022
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 24 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Tue Sep 13 23:17:56 2022
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
