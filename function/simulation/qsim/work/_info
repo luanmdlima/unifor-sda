@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\function\simulation\qsim
+vfuncoes
+Z1 IKWG6XZ75=K=BUYJjJ2WEY1
+Z2 VR1gMJ2oQ9J_]ZSSZ;GT;W0
+Z3 dC:\altera\13.1\function\simulation\qsim
+Z4 w1664319685
+Z5 8function.vo
+Z6 Ffunction.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|function.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 GoDFOzkQM1R>mL2cLA^WZ2
+!s85 0
+Z11 !s108 1664319687.195000
+Z12 !s107 function.vo|
+!s101 -O0
+vfuncoes_vlg_check_tst
+!i10b 1
+Z13 !s100 D1AjkjKUO[jchdcl7e67V0
+Z14 IXVI]bBdK<Jm6jTfHUBzH23
+Z15 Vk0<=N<NOJOJJjj[P2TVT22
+R3
+Z16 w1664319683
+Z17 8funcoes.vwf.vt
+Z18 Ffuncoes.vwf.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z19 !s108 1664319687.421000
+Z20 !s107 funcoes.vwf.vt|
+Z21 !s90 -work|work|funcoes.vwf.vt|
+!s101 -O0
+R9
+vfuncoes_vlg_sample_tst
+!i10b 1
+Z22 !s100 fc6Gni@K2Fcm]Uc;bY7[?1
+Z23 INMLz7DJiZZOb6ZGTW@ame1
+Z24 VeUGKcIz>63_0oIOZlbWmB0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vfuncoes_vlg_vec_tst
+!i10b 1
+Z25 !s100 BG:gM1NgWLh<JQ`TF@Qhh0
+Z26 IU<ge=DJW_ze4o426HSz_g0
+Z27 VeJK1F>bAL:l]Ecd2`ENT=0
+R3
+R16
+R17
+R18
+Z28 L0 213
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
