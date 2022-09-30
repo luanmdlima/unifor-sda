@@ -1,0 +1,35 @@
+|adder
+x[0] => s.IN0
+x[0] => v.IN0
+x[0] => v.IN0
+x[1] => s.IN0
+x[1] => v.IN0
+x[1] => v.IN1
+x[2] => s.IN0
+x[2] => v.IN0
+x[2] => v.IN1
+x[3] => s.IN0
+x[3] => v.IN0
+x[3] => v.IN1
+y[0] => s.IN1
+y[0] => v.IN1
+y[0] => v.IN0
+y[1] => s.IN1
+y[1] => v.IN1
+y[1] => v.IN1
+y[2] => s.IN1
+y[2] => v.IN1
+y[2] => v.IN1
+y[3] => s.IN1
+y[3] => v.IN1
+y[3] => v.IN1
+ze => s.IN1
+ze => v.IN1
+ze => v.IN1
+s[0] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] << s.DB_MAX_OUTPUT_PORT_TYPE
+zs << v.DB_MAX_OUTPUT_PORT_TYPE
+
+
