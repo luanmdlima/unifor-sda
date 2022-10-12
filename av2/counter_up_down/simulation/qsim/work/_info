@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\luanm\workspace\unifor\sda\av2\counter_up_down\simulation\qsim
+vbinary_up_down_counter
+Z1 !s100 P?nn9Dce;e?JFahU[6cz40
+Z2 I4T>5Do=Da:IWkQzR]C<:62
+Z3 V_@M79Z9_P3lbS2CzmdJ4Q3
+Z4 dC:\Users\luanm\workspace\unifor\sda\av2\counter_up_down\simulation\qsim
+Z5 w1665526800
+Z6 8counter_up_down.vo
+Z7 Fcounter_up_down.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|counter_up_down.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1665526802.114000
+Z12 !s107 counter_up_down.vo|
+!s101 -O0
+vbinary_up_down_counter_vlg_check_tst
+!i10b 1
+Z13 !s100 OzMnnEUY709Ui0oIUiTc70
+Z14 I==6<:NgOF>T0z_5Y0z:nI0
+Z15 V`>D7Y]WPECN=`[<]ELHY]0
+R4
+Z16 w1665526797
+Z17 8binary_up_down_counter.vwf.vt
+Z18 Fbinary_up_down_counter.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1665526802.500000
+Z20 !s107 binary_up_down_counter.vwf.vt|
+Z21 !s90 -work|work|binary_up_down_counter.vwf.vt|
+!s101 -O0
+R10
+vbinary_up_down_counter_vlg_sample_tst
+!i10b 1
+Z22 !s100 Q3QA:b>zHEdF0[R:ZU1gN2
+Z23 IYCbSSFNf?n<d9mTF@>KPH1
+Z24 V6b<aNDLjMFWmHmhNV]aLl1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vbinary_up_down_counter_vlg_vec_tst
+!i10b 1
+Z25 !s100 27g;OJ`7I6Q:Skmdj<LH[0
+Z26 I3k0KcK1U4=@?VMC2aiSTR1
+Z27 V^B<N3aRF`hFzWj05=B7Z?0
+R4
+R16
+R17
+R18
+Z28 L0 283
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
