@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity part1 is
+	port(
+		SW: in std_logic_vector(7 downto 0);
+		LEDG: out std_logic_vector(7 downto 0);
+		HEX1, HEX0: out std_logic_vector(0 to 6)
+	);
+end part1;
+
+architecture structure of part1 is
+	component bcd7seg
+		port(
+			b: in std_logic_vector(3 downto 0);
+			h: out std_logic_vector(0 to 6)
+		);
+	end bcd7seg;
+	
+	begin
+		LEDG <= SW;
+		digit1: bcd7seg port map(SW(7 downto 4), HEX1);
+		digit0: bcd7seg port map(SW(7 downto 4), HEX0);
+end structure;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity bcd7seg is
+	port(
+		b: in std_logic_vector(3 downto 0);
+		h: out std_logic_vector(0 to 6)
+	);
+end bcd7seg;
+
+architecture behavior of bcd7seg is begin
+	process(b) begin
+		case b is
+			when "0000" => h <= "0000001";
+			when "0001" => h <= "1001111";
+			when "0010" => h <= "0010010";
+			when "0011" => h <= "0000110";
+			when "0100" => h <= "1001100";
+			when "0101" => h <= "0100100";
+			when "0110" => h <= "0100000";
+			when "0111" => h <= "0001111";
+			when "1000" => h <= "0000000";
+			when "1001" => h <= "0000100";
+			when others => h <= "1111111";
+		end case;
+	end process;
+end behavior;
