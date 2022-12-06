@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity compara is
+	port(
+		clock, tot_ld, tot_clr: in std_logic;
+		totalR: in unsigned(7 downto 0);
+		totalC, totalS: out unsigned(7 downto 0)
+	);
+end entity;
+
+architecture registrador of registrador is begin
+	process(clock, tot_clr) begin
+		
+	end process;
+end architecture;

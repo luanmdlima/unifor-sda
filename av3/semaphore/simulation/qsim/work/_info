@@ -1,0 +1,309 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\luanm\workspace\unifor\sda\av3\semaphore\simulation\qsim
+vcontroller
+Z1 !s100 6@mNjoTUVPD_aShP?8Lb;3
+Z2 IU?JldU_<KB?O@[^U_^mh]0
+Z3 Va3PXd`@B@Qa;ZH`8_?VkB3
+Z4 dC:\Users\luanm\workspace\unifor\sda\av3\semaphore\simulation\qsim
+Z5 w1670359983
+Z6 8semaphore.vo
+Z7 Fsemaphore.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|semaphore.vo|
+Z10 o-work work -O0
+Z11 !s108 1670359984.183000
+Z12 !s107 semaphore.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontroller_vlg_check_tst
+Z13 !s100 2DG`UbA8SGF9I^]1VCebR3
+Z14 IQ2AIe0lTU=eU]Bz2Rl8X60
+Z15 VPJ8VKMPSE0SJ:^;SfH`Y<2
+R4
+Z16 w1670359981
+Z17 8controller.vwf.vt
+Z18 Fcontroller.vwf.vt
+L0 61
+R8
+r1
+31
+Z19 !s108 1670359984.331000
+Z20 !s107 controller.vwf.vt|
+Z21 !s90 -work|work|controller.vwf.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontroller_vlg_sample_tst
+Z22 !s100 8<IZW@Xd<8Yffahl]<cbo2
+Z23 IZZ=<VQ2_2670KiJS^@8@O3
+Z24 VA0Y80Z4B`OdXOX6M^PlWV1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontroller_vlg_vec_tst
+Z25 I]nQZTD:=DBASW]NX@7lQJ3
+Z26 VBSiG7>@g74A<1_=TC6R340
+R4
+R16
+R17
+R18
+Z27 L0 342
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z28 !s100 CZ:07AmkQR_MR7QPo1:TV2
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter_5bit
+Z29 IDmKGogGNCBAH[ci15EVYh1
+Z30 VP^TD`EA:BA]K5M[EaE0;b2
+R4
+Z31 w1670360103
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z32 !s100 8aOC:A9zJA[W0nN]ncJY]0
+!s85 0
+Z33 !s108 1670360104.926000
+R12
+!s101 -O0
+vcounter_5bit_vlg_check_tst
+!i10b 1
+Z34 !s100 [K3:9QM1C_EM[b5^7oz7j0
+Z35 IdZhE?Sz7a1S=iDF>j[Qnl0
+Z36 V17=[1N4<V_6gf3lL^6bge0
+R4
+Z37 w1670360102
+Z38 8counter_5bit.vwf.vt
+Z39 Fcounter_5bit.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z40 !s108 1670360105.063000
+Z41 !s107 counter_5bit.vwf.vt|
+Z42 !s90 -work|work|counter_5bit.vwf.vt|
+!s101 -O0
+R10
+vcounter_5bit_vlg_sample_tst
+!i10b 1
+Z43 !s100 V`4TK7ii<bTSccB9Me=Dj3
+Z44 IR150V5SHeHQZ75`UJY`X^0
+Z45 V[cKRRk<`j0H3M5RGdANNn2
+R4
+R37
+R38
+R39
+L0 29
+R8
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R10
+vcounter_5bit_vlg_vec_tst
+!i10b 1
+Z46 !s100 K2jeh5HYKJH8kPon1B`i53
+Z47 IdgHc8:g;d2k8MSY^IQ8_D0
+Z48 VYC[@3bcOCiKNofPA0eMYb1
+R4
+R37
+R38
+R39
+Z49 L0 225
+R8
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R10
+vsemaphore
+Z50 IJSI964Re=ORDKhBo8LNaj3
+Z51 V;:=fH^iW@^Z;olojnKkg]1
+R4
+Z52 w1670334447
+R6
+R7
+L0 31
+R8
+r1
+31
+R10
+Z53 !s100 l`G1zj;P6j5Kk3c?GS:Ve2
+Z54 !s108 1670334451.409000
+R12
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_state_machine
+Z55 IaV?CiBUL5Q_WOEl>7l59n0
+Z56 VW:d_CLR?dI:eZEWjIEAMK0
+R4
+Z57 w1670335299
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z58 !s100 CQ?CNoi:i7^jfX6JaJzoc0
+Z59 !s108 1670335300.226000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_state_machine_vlg_check_tst
+Z60 I[5@WjJ:zSZd>>FC4a@S^52
+Z61 VT7SJW5]jBM@mk>NQgO8ZC1
+R4
+Z62 w1670335296
+Z63 8semaphore_state_machine.vwf.vt
+Z64 Fsemaphore_state_machine.vwf.vt
+L0 61
+R8
+r1
+31
+Z65 !s108 1670335300.459000
+Z66 !s107 semaphore_state_machine.vwf.vt|
+Z67 !s90 -work|work|semaphore_state_machine.vwf.vt|
+R10
+Z68 !s100 Ai[?:75ZYj=WDiPDN_OUO2
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_state_machine_vlg_sample_tst
+Z69 IlfOlHQ:LGlzC[;U_3]eV90
+Z70 V8iL]X9d?fm7F474`<Z3=`2
+R4
+R62
+R63
+R64
+L0 29
+R8
+r1
+31
+R65
+R66
+R67
+R10
+Z71 !s100 h2d^K?`UTo?c2Q@VaL1192
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_state_machine_vlg_vec_tst
+Z72 IDdc:Ll=`PLH_7R=6ClLD>0
+Z73 V2h?ikVndPQIJEQ8czLoR72
+R4
+R62
+R63
+R64
+R27
+R8
+r1
+31
+R65
+R66
+R67
+R10
+Z74 !s100 C7R5z5W>F_ZATCXIWD5_E0
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_vlg_check_tst
+Z75 IAgIT6ib?m6;fm^JMjkVcg0
+Z76 VhL:Y6j2m0hNAOP=Z[YLBL1
+R4
+Z77 w1670334444
+Z78 8semaphore.vwf.vt
+Z79 Fsemaphore.vwf.vt
+L0 59
+R8
+r1
+31
+Z80 !s108 1670334451.619000
+Z81 !s107 semaphore.vwf.vt|
+Z82 !s90 -work|work|semaphore.vwf.vt|
+R10
+Z83 !s100 6DzC8_TMIgVCET=^l;>L^1
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_vlg_sample_tst
+Z84 IVf4g1dNnQJL]L`?SI?^Z10
+Z85 VMF5zA5LLjD>_oJ3_hKDWD2
+R4
+R77
+R78
+R79
+L0 29
+R8
+r1
+31
+R80
+R81
+R82
+R10
+Z86 !s100 AG[_HSkQ1dU;h^T^_Df3>3
+!i10b 1
+!s85 0
+!s101 -O0
+vsemaphore_vlg_vec_tst
+Z87 IT0U`]7Hlf4@JOo5D?i<Yl3
+Z88 VVYldlDf2Fg3`_4;S5cz5Y3
+R4
+R77
+R78
+R79
+Z89 L0 340
+R8
+r1
+31
+R80
+R81
+R82
+R10
+Z90 !s100 BjAWR8EO2Yizh<@c5=CCH3
+!i10b 1
+!s85 0
+!s101 -O0
