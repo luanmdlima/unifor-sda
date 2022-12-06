@@ -1,5 +1,5 @@
 
-State Machine - |control|fstate
+State Machine - |system|control:inst|fstate
 Name fstate.provide fstate.add fstate.waiting fstate.begining 
 fstate.begining 0 0 0 0 
 fstate.waiting 0 0 1 1 

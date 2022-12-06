@@ -1,5 +1,5 @@
 EDA Netlist Writer report for vending_machine
-Tue Dec 06 18:00:19 2022
+Tue Dec 06 20:34:27 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Dec 06 18:00:19 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue Dec 06 20:34:27 2022 ;
 ; Revision Name             ; vending_machine                       ;
 ; Top-level Entity Name     ; operational                           ;
 ; Family                    ; Cyclone III                           ;
@@ -93,12 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Tue Dec 06 18:00:19 2022
+    Info: Processing started: Tue Dec 06 20:34:27 2022
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/ vending_machine -c vending_machine
+Info (119006): Selected device EP3C16F484C6 for design "vending_machine"
 Info (204019): Generated file vending_machine.vo in folder "C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4556 megabytes
-    Info: Processing ended: Tue Dec 06 18:00:19 2022
+    Info: Processing ended: Tue Dec 06 20:34:27 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -1,11 +1,80 @@
-|counter_5bit
-clock => process_0.IN0
-clock => count[0].LATCH_ENABLE
-clock => count[1].LATCH_ENABLE
-clock => count[2].LATCH_ENABLE
-clock => count[3].LATCH_ENABLE
-clock => count[4].LATCH_ENABLE
-reset => process_0.IN1
+|system
+rst_counter <= controller:inst.reset_counter
+reset => controller:inst.reset
+clock => controller:inst.clock
+clk_1s => counter_5bit:inst2.clock
+counter[0] <= counter_5bit:inst2.q[0]
+counter[1] <= counter_5bit:inst2.q[1]
+counter[2] <= counter_5bit:inst2.q[2]
+counter[3] <= counter_5bit:inst2.q[3]
+counter[4] <= counter_5bit:inst2.q[4]
+green[0] <= controller:inst.green[0]
+green[1] <= controller:inst.green[1]
+green[2] <= controller:inst.green[2]
+red[0] <= controller:inst.red[0]
+red[1] <= controller:inst.red[1]
+red[2] <= controller:inst.red[2]
+yellow[0] <= controller:inst.yellow[0]
+yellow[1] <= controller:inst.yellow[1]
+yellow[2] <= controller:inst.yellow[2]
+
+
+|system|controller:inst
+reset => fstate~3.DATAIN
+clock => fstate~1.DATAIN
+counter[0] => Equal0.IN2
+counter[0] => Equal1.IN1
+counter[0] => Equal2.IN4
+counter[0] => Equal3.IN4
+counter[0] => Equal4.IN4
+counter[0] => Equal5.IN4
+counter[1] => Equal0.IN1
+counter[1] => Equal1.IN4
+counter[1] => Equal2.IN3
+counter[1] => Equal3.IN3
+counter[1] => Equal4.IN2
+counter[1] => Equal5.IN1
+counter[2] => Equal0.IN4
+counter[2] => Equal1.IN3
+counter[2] => Equal2.IN1
+counter[2] => Equal3.IN2
+counter[2] => Equal4.IN3
+counter[2] => Equal5.IN3
+counter[3] => Equal0.IN3
+counter[3] => Equal1.IN2
+counter[3] => Equal2.IN0
+counter[3] => Equal3.IN1
+counter[3] => Equal4.IN1
+counter[3] => Equal5.IN0
+counter[4] => Equal0.IN0
+counter[4] => Equal1.IN0
+counter[4] => Equal2.IN2
+counter[4] => Equal3.IN0
+counter[4] => Equal4.IN0
+counter[4] => Equal5.IN2
+red[0] <= red.DB_MAX_OUTPUT_PORT_TYPE
+red[1] <= red.DB_MAX_OUTPUT_PORT_TYPE
+red[2] <= red.DB_MAX_OUTPUT_PORT_TYPE
+yellow[0] <= yellow[0].DB_MAX_OUTPUT_PORT_TYPE
+yellow[1] <= yellow[1].DB_MAX_OUTPUT_PORT_TYPE
+yellow[2] <= yellow[2].DB_MAX_OUTPUT_PORT_TYPE
+green[0] <= green[0].DB_MAX_OUTPUT_PORT_TYPE
+green[1] <= green[1].DB_MAX_OUTPUT_PORT_TYPE
+green[2] <= green[2].DB_MAX_OUTPUT_PORT_TYPE
+reset_counter <= reset_counter.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|system|counter_5bit:inst2
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+reset => count[0].OUTPUTSELECT
+reset => count[1].OUTPUTSELECT
+reset => count[2].OUTPUTSELECT
+reset => count[3].OUTPUTSELECT
+reset => count[4].OUTPUTSELECT
 q[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE

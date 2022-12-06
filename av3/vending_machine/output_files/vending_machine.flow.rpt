@@ -1,5 +1,5 @@
 Flow report for vending_machine
-Tue Dec 06 18:00:19 2022
+Tue Dec 06 20:34:27 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 06 18:00:19 2022      ;
+; Flow Status                        ; Successful - Tue Dec 06 20:34:27 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; vending_machine                            ;
 ; Top-level Entity Name              ; operational                                ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 24 / 15,408 ( < 1 % )                      ;
-;     Total combinational functions  ; 17 / 15,408 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 16 / 15,408 ( < 1 % )                      ;
+; Total logic elements               ; 25                                         ;
+;     Total combinational functions  ; 17                                         ;
+;     Dedicated logic registers      ; 16                                         ;
 ; Total registers                    ; 16                                         ;
-; Total pins                         ; 20 / 347 ( 6 % )                           ;
+; Total pins                         ; 20                                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2022 17:58:58 ;
+; Start date & time ; 12/06/2022 20:34:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vending_machine     ;
 +-------------------+---------------------+
@@ -75,11 +75,12 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------------------------------+-----------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                    ; Default Value   ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------------------------+-----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 14085503359288.167036033812264                                           ; --              ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 154691465140937.167036964205636                                          ; --              ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                       ; --              ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/ ; --              ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                              ; --              ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                ; <None>          ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                                     ; --              ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                       ; --              ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                        ; --              ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                     ; --              ; --          ; --             ;
@@ -93,51 +94,33 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------------------------------+-----------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:06     ; 2.2                     ; 5345 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4593 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4672 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4545 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:08                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; desktop-windows  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; laptop-windowsN  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; laptop-windowsN  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; laptop-windowsN  ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off vending_machine -c vending_machine
-quartus_fit --read_settings_files=off --write_settings_files=off vending_machine -c vending_machine
-quartus_asm --read_settings_files=off --write_settings_files=off vending_machine -c vending_machine
-quartus_sta vending_machine -c vending_machine
-quartus_eda --read_settings_files=off --write_settings_files=off vending_machine -c vending_machine
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog vending_machine -c vending_machine --vector_source=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/operational.vwf --testbench_file=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/operational.vwf.vt
-quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/ vending_machine -c vending_machine
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog vending_machine -c vending_machine --vector_source=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/operational.vwf --testbench_file=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/operational.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/simulation/qsim/ vending_machine -c vending_machine
 

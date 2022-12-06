@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/06/2022 17:56:08"
+// Generated on "12/06/2022 19:23:13"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    counter_5bit
 // 
@@ -244,8 +244,8 @@ counter_5bit i1 (
 always
 begin
 	clock = 1'b0;
-	clock = #25000 1'b1;
-	#25000;
+	clock = #5000 1'b1;
+	#5000;
 end 
 
 // reset

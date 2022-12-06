@@ -18,9 +18,6 @@
 # Loading work.operational
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_clkctrl
-# Loading cycloneiii_ver.cycloneiii_mux41
-# Loading cycloneiii_ver.cycloneiii_ena_reg
 # Loading altera_ver.dffeas
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading work.operational_vlg_sample_tst

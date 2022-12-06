@@ -12,15 +12,14 @@ end entity;
 architecture counter_5bit of counter_5bit is
 	signal count: unsigned(4 downto 0);
 	begin
-		process(clock) begin
-			if((clock = '1') and (reset = '1')) then 
+		process(clock, reset) begin
+			if(rising_edge(clock) and (reset = '1')) then 
 				count <= "00000"; 
-				elsif(clock = '1') then 
+				elsif(rising_edge(clock)) then 
 					--count <=	 count + 1;
 					--count <= count + '1';
 					count <= count + "00001";
 			end if;
-			q <= count;
 		end process;
-		
+		q <= count;
 end architecture;
