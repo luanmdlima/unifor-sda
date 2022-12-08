@@ -1,4 +1,49 @@
-|operational
+|system_2
+d <= controller:inst1.d
+reset => controller:inst1.reset
+clock => controller:inst1.clock
+clock => operational:inst2.clock
+c => controller:inst1.c
+a[0] => operational:inst2.a[0]
+a[1] => operational:inst2.a[1]
+a[2] => operational:inst2.a[2]
+a[3] => operational:inst2.a[3]
+a[4] => operational:inst2.a[4]
+a[5] => operational:inst2.a[5]
+a[6] => operational:inst2.a[6]
+a[7] => operational:inst2.a[7]
+s[0] => operational:inst2.s[0]
+s[1] => operational:inst2.s[1]
+s[2] => operational:inst2.s[2]
+s[3] => operational:inst2.s[3]
+s[4] => operational:inst2.s[4]
+s[5] => operational:inst2.s[5]
+s[6] => operational:inst2.s[6]
+s[7] => operational:inst2.s[7]
+
+
+|system_2|controller:inst1
+reset => reg_fstate.begining.OUTPUTSELECT
+reset => reg_fstate.waiting.OUTPUTSELECT
+reset => reg_fstate.add.OUTPUTSELECT
+reset => reg_fstate.provide.OUTPUTSELECT
+reset => reg_fstate.wait_not_c.OUTPUTSELECT
+reset => d.OUTPUTSELECT
+reset => tot_ld.OUTPUTSELECT
+reset => tot_clr.OUTPUTSELECT
+clock => fstate~1.DATAIN
+c => reg_fstate.DATAA
+c => reg_fstate.DATAA
+c => process_1.IN0
+c => Selector0.IN3
+c => Selector1.IN2
+tot_lt_s => process_1.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+tot_ld <= tot_ld.DB_MAX_OUTPUT_PORT_TYPE
+tot_clr <= tot_clr.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|system_2|operational:inst2
 tot_lt_s <= comparator:inst.tot_lt_s
 s[0] => comparator:inst.s[0]
 s[1] => comparator:inst.s[1]
@@ -21,7 +66,7 @@ a[6] => adder:inst3.a[6]
 a[7] => adder:inst3.a[7]
 
 
-|operational|comparator:inst
+|system_2|operational:inst2|comparator:inst
 s[0] => LessThan0.IN8
 s[1] => LessThan0.IN7
 s[2] => LessThan0.IN6
@@ -41,7 +86,7 @@ totalC[7] => LessThan0.IN9
 tot_lt_s <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|operational|registrator:inst2
+|system_2|operational:inst2|registrator:inst2
 clock => totalC[0]~reg0.CLK
 clock => totalC[1]~reg0.CLK
 clock => totalC[2]~reg0.CLK
@@ -124,7 +169,7 @@ totalS[6] <= totalS[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 totalS[7] <= totalS[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|operational|adder:inst3
+|system_2|operational:inst2|adder:inst3
 a[0] => Add0.IN8
 a[1] => Add0.IN7
 a[2] => Add0.IN6

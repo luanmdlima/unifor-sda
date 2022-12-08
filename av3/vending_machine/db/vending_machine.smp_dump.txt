@@ -1,7 +1,8 @@
 
-State Machine - |system|control:inst|fstate
-Name fstate.provide fstate.add fstate.waiting fstate.begining 
-fstate.begining 0 0 0 0 
-fstate.waiting 0 0 1 1 
-fstate.add 0 1 0 1 
-fstate.provide 1 0 0 1 
+State Machine - |system_2|controller:inst1|fstate
+Name fstate.wait_not_c fstate.provide fstate.add fstate.waiting fstate.begining 
+fstate.begining 0 0 0 0 0 
+fstate.waiting 0 0 0 1 1 
+fstate.add 0 0 1 0 1 
+fstate.provide 0 1 0 0 1 
+fstate.wait_not_c 1 0 0 0 1 

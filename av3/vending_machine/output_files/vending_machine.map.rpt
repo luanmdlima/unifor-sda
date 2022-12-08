@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vending_machine
-Tue Dec 06 20:34:03 2022
+Thu Dec 08 16:10:57 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,9 +13,10 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. State Machine - |system_2|controller:inst1|fstate
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,15 +42,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 06 20:34:03 2022      ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 08 16:10:57 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; vending_machine                            ;
-; Top-level Entity Name              ; operational                                ;
+; Top-level Entity Name              ; system_2                                   ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 25                                         ;
-;     Total combinational functions  ; 17                                         ;
-;     Dedicated logic registers      ; 16                                         ;
-; Total registers                    ; 16                                         ;
+; Total logic elements               ; 33                                         ;
+;     Total combinational functions  ; 25                                         ;
+;     Dedicated logic registers      ; 21                                         ;
+; Total registers                    ; 21                                         ;
 ; Total pins                         ; 20                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; operational        ; vending_machine    ;
+; Top-level entity name                                                      ; system_2           ; vending_machine    ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,6 +172,8 @@ applicable agreement for further details.
 ; registrator.vhd                  ; yes             ; User VHDL File                     ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/registrator.vhd ;         ;
 ; comparator.vhd                   ; yes             ; User VHDL File                     ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/comparator.vhd  ;         ;
 ; operational.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/operational.bdf ;         ;
+; system_2.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/system_2.bdf    ;         ;
+; controller.vhd                   ; yes             ; Auto-Found VHDL File               ; C:/Users/luanm/workspace/unifor/sda/av3/vending_machine/controller.vhd  ;         ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 
 
@@ -179,42 +182,58 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 25          ;
+; Estimated Total logic elements              ; 33          ;
 ;                                             ;             ;
-; Total combinational functions               ; 17          ;
+; Total combinational functions               ; 25          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 14          ;
-;     -- <=2 input functions                  ; 3           ;
+;     -- 4 input functions                    ; 3           ;
+;     -- 3 input functions                    ; 16          ;
+;     -- <=2 input functions                  ; 6           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 3           ;
+;     -- normal mode                          ; 11          ;
 ;     -- arithmetic mode                      ; 14          ;
 ;                                             ;             ;
-; Total registers                             ; 16          ;
-;     -- Dedicated logic registers            ; 16          ;
+; Total registers                             ; 21          ;
+;     -- Dedicated logic registers            ; 21          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 20          ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 16          ;
-; Total fan-out                               ; 125         ;
-; Average fan-out                             ; 1.71        ;
+; Maximum fan-out                             ; 21          ;
+; Total fan-out                               ; 159         ;
+; Average fan-out                             ; 1.85        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
-; |operational               ; 17 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |operational                   ; work         ;
-;    |adder:inst3|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |operational|adder:inst3       ; work         ;
-;    |comparator:inst|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |operational|comparator:inst   ; work         ;
-;    |registrator:inst2|     ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |operational|registrator:inst2 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
+; |system_2                  ; 25 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |system_2                                     ; work         ;
+;    |controller:inst1|      ; 9 (9)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_2|controller:inst1                    ; work         ;
+;    |operational:inst2|     ; 16 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_2|operational:inst2                   ; work         ;
+;       |adder:inst3|        ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_2|operational:inst2|adder:inst3       ; work         ;
+;       |comparator:inst|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_2|operational:inst2|comparator:inst   ; work         ;
+;       |registrator:inst2|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_2|operational:inst2|registrator:inst2 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------+
+; State Machine - |system_2|controller:inst1|fstate                                                      ;
++-------------------+-------------------+----------------+------------+----------------+-----------------+
+; Name              ; fstate.wait_not_c ; fstate.provide ; fstate.add ; fstate.waiting ; fstate.begining ;
++-------------------+-------------------+----------------+------------+----------------+-----------------+
+; fstate.begining   ; 0                 ; 0              ; 0          ; 0              ; 0               ;
+; fstate.waiting    ; 0                 ; 0              ; 0          ; 1              ; 1               ;
+; fstate.add        ; 0                 ; 0              ; 1          ; 0              ; 1               ;
+; fstate.provide    ; 0                 ; 1              ; 0          ; 0              ; 1               ;
+; fstate.wait_not_c ; 1                 ; 0              ; 0          ; 0              ; 1               ;
++-------------------+-------------------+----------------+------------+----------------+-----------------+
 
 
 +------------------------------------------------------+
@@ -222,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 21    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
@@ -247,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 06 20:34:01 2022
+    Info: Processing started: Thu Dec 08 16:10:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vending_machine -c vending_machine
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
@@ -263,21 +282,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file operati
     Info (12023): Found entity 1: operational
 Info (12021): Found 1 design units, including 1 entities, in source file system.bdf
     Info (12023): Found entity 1: system
-Info (12127): Elaborating entity "operational" for the top level hierarchy
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:inst"
-Info (12128): Elaborating entity "registrator" for hierarchy "registrator:inst2"
+Info (12021): Found 1 design units, including 1 entities, in source file system_2.bdf
+    Info (12023): Found entity 1: system_2
+Info (12127): Elaborating entity "system_2" for the top level hierarchy
+Warning (12125): Using design file controller.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: controller-BEHAVIOR
+    Info (12023): Found entity 1: controller
+Info (12128): Elaborating entity "controller" for hierarchy "controller:inst1"
+Info (12128): Elaborating entity "operational" for hierarchy "operational:inst2"
+Info (12128): Elaborating entity "comparator" for hierarchy "operational:inst2|comparator:inst"
+Info (12128): Elaborating entity "registrator" for hierarchy "operational:inst2|registrator:inst2"
 Warning (10492): VHDL Process Statement warning at registrator.vhd(17): signal "tot_ld" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "adder" for hierarchy "adder:inst3"
+Info (12128): Elaborating entity "adder" for hierarchy "operational:inst2|adder:inst3"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info (21061): Implemented 41 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4677 megabytes
-    Info: Processing ended: Tue Dec 06 20:34:03 2022
+    Info: Processing ended: Thu Dec 08 16:10:57 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
